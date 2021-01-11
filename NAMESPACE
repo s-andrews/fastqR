@@ -3,3 +3,4 @@
 export(decode_qualities)
 export(gc_content)
 export(read_fastq)
+importFrom(magrittr,"%>%")

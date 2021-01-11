@@ -16,5 +16,5 @@ A tibble with ID, Bases, Qualities and GC columns
 Read in a FastQ file
 }
 \examples{
-read_fastq("/data/test.fq")
+read_fastq(system.file("good.fq", package = "fastqR"))
 }

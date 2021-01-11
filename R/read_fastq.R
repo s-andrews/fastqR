@@ -6,8 +6,10 @@
 #' @return A tibble with ID, Bases, Qualities and GC columns
 #' @export
 #'
+#' @importFrom magrittr %>%
+#'
 #' @examples
-#' read_fastq("/data/test.fq")
+#' read_fastq(system.file("good.fq", package = "fastqR"))
 read_fastq <- function(file) {
   assertthat::assert_that(assertthat::is.readable(file))
   assertthat::assert_that(assertthat::has_extension(file,"fq"))

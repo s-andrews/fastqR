@@ -8,8 +8,7 @@ Authors@R:
            email = "simon.andrews@babraham.ac.uk",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Makes it easy to work with the fastq file format
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

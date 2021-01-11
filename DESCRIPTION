@@ -19,3 +19,7 @@ Imports:
     tibble
 Depends:
     magrittr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

@@ -1,4 +1,13 @@
 
+#' Read in a FastQ file
+#'
+#' @param file an uncompressed file (.fq extension) in fastq format
+#'
+#' @return A tibble with ID, Bases, Qualities and GC columns
+#' @export
+#'
+#' @examples
+#' read_fastq("/data/test.fq")
 read_fastq <- function(file) {
   assertthat::assert_that(assertthat::is.readable(file))
   assertthat::assert_that(assertthat::has_extension(file,"fq"))

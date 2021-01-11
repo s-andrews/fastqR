@@ -12,6 +12,8 @@
 #' decode_qualities("WZZZVX[]", offset=64)
 decode_qualities <- function(qualities, offset=33) {
 
+  assertthat::assert_that(assertthat::is.scalar(qualities))
+  assertthat::assert_that(assertthat::is.string(qualities))
   assertthat::assert_that(assertthat::is.scalar(offset))
   assertthat::assert_that(assertthat::is.number(offset))
 

@@ -22,3 +22,18 @@ test_that("Check GC content", {
   expect_equal(gc_content("GGATCTTAGG"), 50)
   expect_warning(gc_content("GGATCNTTAGG"))
 })
+
+
+test_that("Check Quality Decoding", {
+  expect_equal(decode_qualities("B"),33)
+  expect_equal(decode_qualities("B", offset=64),2)
+  expect_equal(decode_qualities("AB"),c(32,33))
+  expect_error(decode_qualities(c("A","B")))
+  expect_equal(decode_qualities("@"),31)
+  expect_error(decode_qualities("@",offset=64))
+  expect_error(decode_qualities("A",offset="sanger"))
+  expect_error(decode_qualities("A",offset=63))
+
+})
+
+

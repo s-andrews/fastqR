@@ -1,13 +1,13 @@
 Package: fastqR
-Title: What the Package Does (One Line, Title Case)
+Title: An R Package to manipulate FastQ files
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Simon",
+           family = "Andrews",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "simon.andrews@babraham.ac.uk",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Makes it easy to work with the fastq file format
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8

@@ -29,15 +29,15 @@ read_fastq <- function(file) {
 
 gc_content <- function(seq) {
 
-  assert_that(is.character(seq))
+  assertthat::assert_that(is.character(seq))
 
-  if (any(str_detect(seq,"[^GATC]"))) {
+  if (any(stringr::str_detect(seq,"[^GATC]"))) {
     warning("Non GATC characters found in sequences")
   }
 
   seq <- toupper(seq)
 
-  str_replace_all(seq,"[^GC]","") -> just_gc
+  stringr::str_replace_all(seq,"[^GC]","") -> just_gc
 
   return(100*(nchar(just_gc)/nchar(seq)))
 
